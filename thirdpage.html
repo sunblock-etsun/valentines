@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> what </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center h-screen bg-pink-100">
+    <div class="text-center p-6 bg-white shadow-lg rounded-lg">
+        <p id ="textMessage" class="text-3xl font-semibold text-pink-600">&#128557; NOOOOOOOOO. You have to be my valentine!!!!</p>
+        <div id="imageSection" class = "mt-16">
+          <img src="sleeping beauty.jpeg" alt="Sad Reaction" class="w-64 mx-auto rounded-lg shadow-lg">
+          <p class="mt-2 text-md text-gray-400">btw, I look like a prince waking up dead Snow white &#129315; </p>
+          <p class="mt-16 text-lg font-semibold text-yellow-700"> Pretty, please be my valentine. &#10084;&#65039;  </p>
+
+     </div>
+
+        <div class="mt-2">
+            <button id="hellNoBtn" class="px-4 py-2 bg-pink-600 text-white rounded hover:bg-gray-200 hover:text-pink-600 transition">
+                Alright! I give up!
+            </button>
+            
+     </div>
+
+     <!-- Hidden image section -->
+     <div id="Section" class="hidden mt-4">
+          <img src="mybaby.jpg" alt="Sad Reaction" class="w-64 mx-auto rounded-lg shadow-lg">
+          <p class="mt-4 text-semibold text-gray-400 font-medium">Yay! Finally! &#129392; Love you &#127800; Love you &#127800; Love you &#127800;</p>
+          <p class="text-center text-s text-gray-300"> Sorry no sorry</p>
+     </div>
+
+ </div>
+
+     
+
+
+    <script>
+        document.getElementById("hellNoBtn").addEventListener("click", function() {
+          //hide button and show the image
+          document.getElementById("hellNoBtn").style.display = "none";
+          document.getElementById("textMessage").style.display = "none";
+  
+          document.getElementById("imageSection").style.display = "none";
+          document.getElementById("Section").classList.remove("hidden");
+        });
+     
+
+    </script>
+</body>
+</html>

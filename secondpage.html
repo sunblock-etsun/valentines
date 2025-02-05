@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You sure?</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center h-screen bg-pink-100">
+    <div class="text-center p-6 bg-white shadow-lg rounded-lg">
+        <p class="text-xl font-semibold text-red-400">You sure babe?</p>
+        <div id="imageSection" class = "mt-4">
+            <img src="text.jpeg" alt="Sad Reaction" class="w-64 mx-auto rounded-lg shadow-lg">
+            <p class="mt-2 text-s text-gray-400">I even get this now. Still no? </p>
+
+       </div>
+        <div class="mt-8">
+            <button id="hellNoBtn" class="px-4 py-2 bg-yellow-500 bg-yellow-500 text-white rounded hover:bg-gray-300 hover:text-yellow-700 transition">
+                Obviously!
+            </button>
+            <button id="absolutelyBtn" class="px-4 py-2 bg-pink-500 text-white rounded hover:bg-gray-300 hover:text-pink-700 transition">
+                No, I'm kidding baby!
+            </button>
+          </div>
+
+
+ </div>
+
+     
+    </div>
+
+    <script>
+        document.getElementById("hellNoBtn").addEventListener("click", function() {
+          window.location.href = "thirdpage.html";
+        });
+
+        document.getElementById("absolutelyBtn").addEventListener("click", function() {
+            alert("Oh! Thank god! Love you! Let me give you some kisses. muah muah ");
+        });
+    </script>
+</body>
+</html>
